@@ -1,0 +1,98 @@
+Hazik Khurshid Zargar
+ENG24CY0112
+3C - 18
+
+
+Activity 2:
+
+
+tree options (man tree)
+tree -a
+
+List all files, including hidden ones.
+
+tree -d
+
+List directories only, not files.
+
+tree -u
+
+Show the user owner of each file.
+
+tree -g
+
+Show the group owner of each file.
+
+tree -p
+
+Show the permissions (rwx) of each file.
+
+Exploring More Commands
+ifconfig
+
+Show or configure network interfaces.
+Displays IP address, MAC address, etc.
+
+ping <host>
+
+Test connectivity by sending ICMP packets to a host.
+Example: ping google.com
+PING google.com (142.250.206.78) 56(84) bytes of data.
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=1 ttl=117 time=23.4 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=2 ttl=117 time=47.4 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=3 ttl=117 time=28.8 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=4 ttl=117 time=26.7 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=5 ttl=117 time=45.6 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=6 ttl=117 time=66.8 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=7 ttl=117 time=52.0 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=8 ttl=117 time=49.7 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=9 ttl=117 time=19.0 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=10 ttl=117 time=116 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=11 ttl=117 time=81.6 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=12 ttl=117 time=24.0 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=13 ttl=117 time=117 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=14 ttl=117 time=24.1 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=15 ttl=117 time=21.3 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=16 ttl=117 time=23.5 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=17 ttl=117 time=117 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=18 ttl=117 time=74.1 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=19 ttl=117 time=17.3 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=20 ttl=117 time=39.8 ms
+64 bytes from pnmaaa-ay-in-f14.1e100.net (142.250.206.78): icmp_seq=21 ttl=117 time=79.8 ms
+^C
+--- google.com ping statistics ---
+21 packets transmitted, 21 received, 0% packet loss, time 20046ms
+rtt min/avg/max/mdev = 17.307/52.126/116.813/32.885 ms
+
+
+traceroute <host>
+
+Show the path packets take to reach a host.
+Example: traceroute google.com
+traceroute google.com
+traceroute to google.com (142.251.223.14), 30 hops max, 60 byte packets
+ 1  _gateway (10.20.80.1)  15.197 ms  14.781 ms  14.689 ms
+ 2  static-129.217.194.14-tataidc.co.in (14.194.217.129)  13.647 ms  13.560 ms  13.462 ms
+ 3  115.111.223.9 (115.111.223.9)  14.237 ms * *
+ 4  * 172.31.167.58 (172.31.167.58)  26.179 ms *
+ 5  14.141.123.226.static-Chennai.vsnl.net.in (14.141.123.226)  25.838 ms  25.687 ms  25.474 ms
+ 6  * * *
+ 7  115.112.15.74.static-chennai.vsnl.net.in (115.112.15.74)  20.776 ms  20.157 ms  19.886 ms
+ 8  142.251.66.197 (142.251.66.197)  19.733 ms * 142.250.214.83 (142.250.214.83)  78.055 ms
+ 9  142.251.55.41 (142.251.55.41)  77.829 ms *  77.374 ms
+10  cgk02s06-in-f14.1e100.net (142.251.223.14)  75.826 ms  77.127 ms  75.573 ms
+
+
+nmap <host>
+
+Network scanner: find open ports, services, and hosts.
+Example: nmap 192.168.1.1
+
+mkdir <dir>
+
+Make a new directory.
+Example:(haz㉿kali)-[~]
+└─$ mkdir hi
+(haz㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
